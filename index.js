@@ -31,9 +31,9 @@ const nsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 const vcard = 'BEGIN:VCARD\n' 
             + 'VERSION:3.0\n' 
-            + 'FN:Yoga Admin\n' 
+            + 'FN:Affis Admin\n' 
             + 'ORG: Pengembang XBot;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=62882009496234:+62 882-0094--96234\n' 
+            + 'TEL;type=CELL;type=VOICE;waid=6282334297175:+62 823-3429-7175\n' 
             + 'END:VCARD' 
 prefix = '#'
 blocked = []          
@@ -47,10 +47,10 @@ const arrayBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Jul
 const bulan = arrayBulan[moment().format('MM') - 1]
 const config = {
     XBOT: '❉Yoga❉', 
-    instagram:- 
-    nomer: 'wa.me/62882009496234',
-    youtube: -
-    whatsapp: 'comming soon', 
+    instagram: '-', 
+    nomer: 'wa.me/628820094234',
+    youtube: '-' 
+    whatsapp: 'Comming soon', 
     tanggal: `TANGGAL: ${moment().format('DD')} ${bulan} ${moment().format('YYYY')}`,
     waktu: time
 }
@@ -154,7 +154,7 @@ client.on('group-participants-update', async (anu) => {
 				wait: '❬❗❭ 𝗪𝗔𝗜𝗧, 𝗹𝗮𝗴𝗶 𝗽𝗿𝗼𝘀𝗲𝘀',
 				success: '️❬ ✔ ❭ 𝘀𝘂𝗰𝗰𝗲𝘀𝘀 🖤',
 				error: {
-					stick: 'njir gagal , coba ulangi ^_^',
+					stick: 'Njir gagal ;(, coba ulangi ^_^',
 					Iv: '𝗠𝗮𝗮𝗳 𝗹𝗶𝗻𝗸 𝘁𝗶𝗱𝗮𝗸 𝘃𝗮𝗹𝗶𝗱☹️'
 				},
 				only: {
@@ -359,8 +359,8 @@ client.on('group-participants-update', async (anu) => {
                          text: teks1,
                          contextInfo: {mentionedJid: [nomor]},
                      }
-                    client.sendMessage('6288009496234@s.whatsapp.net', options, text, {quoted: mek})
-                    reply('Masalah telah di laporkan ke owner BOT, laporan palsu/main2? LO KONTOL.')
+                    client.sendMessage('62882009496234@s.whatsapp.net', options, text, {quoted: mek})
+                    reply('Masalah telah di laporkan ke owner BOT, laporan palsu/main2 tidak akan ditanggapi.')
                     break
                 case 'ssweb':
 					if (args.length < 1) return reply('Urlnya mana om')
@@ -799,7 +799,7 @@ client.on('group-participants-update', async (anu) => {
 					ran = getRandom('.png')
 					exec(`ffmpeg -i ${media} ${ran}`, (err) => {
 						fs.unlinkSync(media)
-						if (err) return reply('Njir gagal , coba ulangi ^_^')
+						if (err) return reply('Yah gagal ;(, coba ulangi ^_^')
 						buffer = fs.readFileSync(ran)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: '𝗱𝗮?? 𝗷𝗮𝗱𝗶 '})
 						fs.unlinkSync(ran)

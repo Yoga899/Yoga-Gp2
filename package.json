@@ -1,7 +1,7 @@
 {
-  "name": "YOGABOT",
+  "name": "XBOT",
   "version": "1.0.0",
-  "description": "Gada",
+  "description": "TERMUX ONLY XBOT",
   "main": "index.js",
   "directories": {
     "lib": "lib"
