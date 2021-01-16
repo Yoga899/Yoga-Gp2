@@ -42,7 +42,7 @@ const help = (prefix) => {
 ┣⊱ *${prefix}nsfwtrap*
 ┣━━❀ *Media* ❀━━
 ┣⊱ *${prefix}tiktokstalk*
-┣⊱ *${prefix}ytmp4*
+┣⊱ *${prefix}ytmp4(eror)*
 ┣━━❀ *Other* ❀━━
 ┣⊱ *${prefix}ping*
 ┣⊱ *${prefix}shorturl*
